@@ -1,0 +1,30 @@
+<%- include("partials/header") -%>
+  <br>
+
+  <main id="main">
+
+    <section class="inner-page">
+      <div class="container">
+        <h3>JavaScript</h3>
+        <p>
+          <%= startingContent %>
+        </p>
+
+        <%  posts.forEach(function(post){ %>
+
+        <h3>
+          <%=post.title%>
+        </h3>
+
+        <p>
+          <%=post.content.substring(0, 500) + " ..."%>
+          <a href="/posts/<%=post.title%>">Read More</a>
+        </p>
+
+        <% }) %>
+      </div>
+    </section>
+
+  </main>
+
+<%- include("partials/footer") -%>
