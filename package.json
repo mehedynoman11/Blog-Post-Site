@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node app.js",
-    "build": "your-build-command-here"
+    "build": "npm install && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
